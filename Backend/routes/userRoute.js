@@ -12,7 +12,7 @@ import {
   updatePassword
 } from '../controllers/userController.js';
 
-import { isAuthenticatedUser, authorizeRoles } from '../Middleware/auth.js';
+import { isAuthenticatedUser, authorizeRoles } from '../MiddleWare/auth.js';
 
 const userRoute = express.Router();
 
