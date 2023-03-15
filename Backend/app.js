@@ -9,7 +9,9 @@ import bodyParser from 'body-parser';
 import cors from "cors"
 
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin:["https://mern-backend-dxvh.onrender.com","https://neon-kleicha-b83129.netlify.app/"]}
+));
 app.use(express.json());
 app.use(cookieParser());
 
