@@ -9,14 +9,7 @@ import bodyParser from 'body-parser';
 import cors from "cors"
 
 const app = express();
-app.use(cors({
-    origin: '*'
-}));
-app.use((req, res, next) => {
-    res.append('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-    res.append('Access-Control-Allow-Headers', 'Content-Type');
-    next();
-});
+app.use(cors());
 app.use(express.json());
 app.use(cookieParser());
 
