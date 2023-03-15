@@ -6,8 +6,12 @@ import paymentRoute from './routes/paymentRoute.js';
 import testingRoute from './routes/testingRoute.js';
 import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';
-const app = express();
+import cors from "cors"
 
+const app = express();
+app.use(cors({
+    origin: '*'
+}));
 app.use(express.json());
 app.use(cookieParser());
 
