@@ -130,7 +130,7 @@ export const getProductReviews = async (req, res, next) => {
 // Create New Review or Update the review
 export const createProductReview = async (req, res, next) => {
   const { productId,review } = req.body;
-  console.log(review,productId)
+  // console.log(review,productId)
   const newreview = {
     user: req.user._id,
     name: req.user.name,
