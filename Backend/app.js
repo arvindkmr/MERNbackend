@@ -10,7 +10,7 @@ import cors from "cors"
 
 const app = express();
 app.use(cors({
-    origin:["https://mern-backend-dxvh.onrender.com","https://neon-kleicha-b83129.netlify.app/"],
+    origin:["https://mern-backend-dxvh.onrender.com","https://mern-backend-dxvh.onrender.com/api/v1/"],
 methods:["GET","POST","PUT","DELETE"],
 credentials:true
 }
