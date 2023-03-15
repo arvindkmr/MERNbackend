@@ -10,7 +10,7 @@ import cors from "cors"
 
 const app = express();
 app.use(cors({
-    origin:["https://mern-backend-dxvh.onrender.com","https://mern-backend-dxvh.onrender.com/api/v1/"],
+    origin:"https://mern-backend-dxvh.onrender.com",
 methods:["GET","POST","PUT","DELETE"],
 credentials:true
 }
