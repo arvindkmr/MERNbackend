@@ -6,15 +6,16 @@ import paymentRoute from './routes/paymentRoute.js';
 import testingRoute from './routes/testingRoute.js';
 import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';
-import cors from "cors"
+import cors from 'cors';
 
 const app = express();
-app.use(cors({
-    origin:"https://mern-backend-dxvh.onrender.com",
-methods:["GET","POST","PUT","DELETE"],
-credentials:true
-}
-));
+app.use(
+  cors({
+    'Access-Control-Allow-Origin': '*',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true,
+  })
+);
 app.use(express.json());
 app.use(cookieParser());
 
